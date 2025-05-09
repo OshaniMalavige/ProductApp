@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
+import Image from "next/image";
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import notifications from "@/components/alerts/alerts.js";
@@ -74,9 +75,11 @@ export default function ContactForm() {
                 <div className="w-full md:w-2/5 bg-[var(--primaryColor)] text-white p-6 md:p-8">
                     <div className="h-full flex flex-col">
                         <div className="relative h-48 mb-6 rounded-lg overflow-hidden">
-                            <img
+                            <Image
                                 src="/assests/contact.gif"
                                 alt="Contact"
+                                width={800}
+                                height={400}
                                 className="w-full h-full object-cover"
                             />
                         </div>
@@ -88,7 +91,7 @@ export default function ContactForm() {
                                 <MapPin className="mr-4 mt-1 flex-shrink-0" />
                                 <div>
                                     <h3 className="font-medium">Address</h3>
-                                    <p className="text-sm mt-1">123 Business Avenue, Suite 100<br />San Francisco, CA 94107</p>
+                                    <p className="text-sm mt-1">436 Malwaththa Road, Rose 100<br />Millennium City, 10200</p>
                                 </div>
                             </div>
 
@@ -96,7 +99,7 @@ export default function ContactForm() {
                                 <Phone className="mr-4 mt-1 flex-shrink-0" />
                                 <div>
                                     <h3 className="font-medium">Phone</h3>
-                                    <p className="text-sm mt-1">(123) 456-7890</p>
+                                    <p className="text-sm mt-1">(+94) 777123456</p>
                                 </div>
                             </div>
 
@@ -104,7 +107,7 @@ export default function ContactForm() {
                                 <Mail className="mr-4 mt-1 flex-shrink-0" />
                                 <div>
                                     <h3 className="font-medium">Email</h3>
-                                    <p className="text-sm mt-1">info@yourcompany.com</p>
+                                    <p className="text-sm mt-1">info@logo.com</p>
                                 </div>
                             </div>
                         </div>

@@ -12,7 +12,7 @@ export default function Footer() {
                                 src="/assests/logo.png"
                                 alt="Company Logo"
                                 width={180}
-                                height={45}
+                                height={180}
                                 priority
                             />
                         </Link>
@@ -31,10 +31,10 @@ export default function Footer() {
                     <div>
                         <h3 className="text-lg font-semibold mb-4">Contact</h3>
                         <ul className="space-y-2 text-[var(--primaryColor)]">
-                            <li>123 Shopping Avenue</li>
-                            <li>Commerce City, ST 12345</li>
-                            <li>info@nextshop.com</li>
-                            <li>(123) 456-7890</li>
+                            <li>436 Malwaththa Road, Rose 100</li>
+                            <li>Millennium City, 10200</li>
+                            <li>info@logo.com</li>
+                            <li>(+94) 777123456</li>
                         </ul>
                     </div>
                 </div>

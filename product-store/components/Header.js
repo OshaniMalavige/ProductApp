@@ -1,8 +1,8 @@
 "use client"
 import { useState, useEffect } from 'react';
-import { FaShoppingBag, FaUser, FaBars, FaTimes } from 'react-icons/fa';
 import Link from 'next/link';
 import Image from "next/image";
+import { FaShoppingBag, FaUser, FaBars, FaTimes } from 'react-icons/fa';
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,7 +33,7 @@ export default function Header() {
                                 src="/assests/logo.png"
                                 alt="Company Logo"
                                 width={180}
-                                height={45}
+                                height={180}
                                 priority
                             />
                         </Link>

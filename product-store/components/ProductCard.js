@@ -1,8 +1,8 @@
 'use client';
 
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
 import { FaEye, FaStar } from 'react-icons/fa';
 
 export default function ProductCard({ product }) {
@@ -29,7 +29,7 @@ export default function ProductCard({ product }) {
                         onError={() => setIsImageLoading(false)}
                     />
 
-                    {/* View Details Button - appears on hover */}
+                    {/* View Details Button */}
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
                         <Link href={`/products/${product.id}`} className="flex items-center justify-center bg-white text-[var(--primaryColor)] p-3 rounded-full shadow-lg hover:bg-blue-50 transition-all hover:scale-110">
                             <FaEye className="w-5 h-5" />
