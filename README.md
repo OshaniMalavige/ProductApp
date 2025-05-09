@@ -24,6 +24,7 @@ yarn install
 Create a .env file in the root directory and add your environment variables, for example:
 
 MONGODB_URI=mongodb://0.0.0.0:27017/productStoreDB
+
 API_URL=https://fakestoreapi.com
 
 ### 4. Run the Development Server
@@ -47,4 +48,3 @@ and open your browser and type http://localhost:3000 to see the app.
 
 Database:
 * MongoDB
-# ProductApp
